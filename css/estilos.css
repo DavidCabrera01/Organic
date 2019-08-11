@@ -1,0 +1,160 @@
+/* ---- fuertes----- */
+
+:root {
+    --dosis: 'Dosis', sans-serif;
+    --roboto: 'Roboto', sans-serif;
+    --open-sans: 'Open Sans', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/plums-1573000_1920.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero .barra {
+    position: absolute;
+    left: 125px;
+    top: 1rem;
+    background: #fff;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0px;
+    border-radius: 1.5rem;
+    align-items: center;
+}
+
+.hero .barra .contenedor-logo {
+    color: #000;
+    margin-left: 1rem;
+    font-family: var(--dosis);
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.hero .barra .menu a {
+    color: #000;
+    text-decoration: none;
+    margin-right: 1rem;
+    font-family: var(--roboto);
+}
+
+.hero .barra .menu a:hover {
+    color: rgba(233, 43, 10, 0.726);
+}
+
+.hero .contenido-hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero .contenido-hero .texto {
+    color: #fff;
+    font-family: var(--roboto);
+    text-align: center;
+    line-height: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.hero .contenido-hero .btn {
+    background-color: #fff;
+    border: none;
+    padding: 1rem 1.5rem;
+    border-radius: 2rem;
+    margin-top: 2rem
+}
+
+.hero .contenido-hero .btn:hover {
+    background: #000;
+    color: #fff;
+}
+
+.contenedor {
+    max-width: 1000px;
+    width: 90%;
+    margin: 0px auto;
+}
+
+img {
+    width: 100%;
+}
+
+.titulo {
+    width: 100%;
+    text-align: center;
+    margin: 1rem 0px;
+    font-family: var(--open-sans);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+main .productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.5rem;
+}
+
+.about p {
+    font-family: var(--open-sans);
+    line-height: 1.5rem;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 100;
+}
+
+.img {
+    margin: 2rem 0px;
+    width: 100%;
+    background-image: url(../img/close-up-colorful-eat-219794.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+}
+
+form {
+    margin: 0 auto;
+    width: 60%;
+}
+
+form input,
+textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+form input {
+    padding: 1rem;
+    border-radius: 2rem;
+    border: 1px solid black;
+    background: none;
+}
+
+form textarea {
+    padding: 1rem;
+    border: 1px solid #000;
+    border-radius: 2rem;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 150px;
+    max-height: 150px;
+}
